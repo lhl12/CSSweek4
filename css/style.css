@@ -109,6 +109,10 @@ nav a:hover {
   font-size: 150%;
 }
 
+#bar div p {
+  color: #ffffff;
+}
+
 /* score details are located in a flex */
 #flex {
   display: flex;
