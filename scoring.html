@@ -10,23 +10,27 @@
 
 <body>
   <p>
-    <a href="#main">Jump to Main Content</a>
+      <a href="#main" class="jump">Jump to Main Content</a>
   </p>
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="topfive.html">Top 5 Lighthouses</a></li>
-        <li><a href="scoring.html">Scoring Criteria</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="topfive.html">Top 5 Lighthouses</a>
+      <a href="scoring.html">Scoring Criteria</a>
     </nav>
     <h1>Scoring Criteria</h1>
   </header>
   
-  <div id="main">
-      <p>Each lighthouse was rated from 1-5 in 10 categories.</p>
+  <div id="bar">
+    <div>
+      <h2>Example Scoring:</h2>
+      <h2> Yaquina Head Lighthouse</h2>
+      <h3>Score: 47/50</h3>
+    </div>
+    <div>
+      <p id="main">Each lighthouse was rated from 1-5 in 10 categories.</p>
       <ul>
-        <li>Craginess/Windswept</li>
+        <li>Craginess or Windiness</li>
         <li>Sorrow</li>
         <li>Height-to-Width Ratio</li>
         <li>Interesting History</li>
@@ -37,44 +41,59 @@
         <li>Design Choices</li>
         <li>Additional Subjective Points</li>
       </ul>
+    </div>
+    <div>
+      <img src="images/YaquinaHead.jpg" alt="A black and white lighthouse on a grassy seaside cliff against a streaked sky">
+    </div>
   </div>
   
-  <div>
-    <h2>Top Rated Lighthouse: Yaquina Head Lighthouse</h2>
-    <h4>Score: 47/50</h4>
-    <p>Example scoring and justifications</p>
-    <div class="grid">
-      <img src="images/YaquinaHead.jpg" alt="A black and white lighthouse on a grassy seaside cliff against a streaked sky" 
-        style="width:50%;">
-      <div>
-        <h5>Craginess/Windswept: 5</h5>
-        <p>Very craggy, very windy, very Pacific Northwest, weird rock right in front of it 
-          so there are crazy waves</p>
-        <h5>Sorrow: 5</h5>
-        <p>Lonely and weary, definite sorrow but in an understated way</p>
-        <h5>Height-to-Width Ratio: 4</h5>
-        <p>I wish it were just a wee bit taller, but it is the tallest lighthouse in Oregon 
-          so that might be too much</p>
-        <h5>Interesting History: 5</h5>
-        <p>Took forever to build because materials kept getting delayed, the building 
-          next door was struck by lightning in 1920, in 1998 a dog named Buddy fell down 
-          the slippery cliff but somehow managed to climb back up uninjured before he could be rescued</p>
-        <h5>Likelihood of Being Haunted: 5</h5>
-        <p>Legend says a worker fell through the scaffolding and died where his body could 
-          not be retrieved during building, another legend says that an assistant keeper 
-          died because he had to try to light the light while ill (the head keeper was out 
-          and the other keeper was drunk), reported ghosts but not after the end of WWII</p>
-        <h5>Name of First Lighthouse Keeper: 5</h5>
-        <p>Fayette S. Crosby</p>
-        <h5>Lens Size: 5</h5>
-        <p>1st order Fresnel still active!</p>
-        <h5>Quirkiness: 3</h5>
-        <p>Pretty conventional but incredibly glamorous</p>
-        <h5>Design Choices: 5</h5>
-        <p>The black and white is really working for it, love the little entry house, very good</p>
-        <h5>Additional Subjective Points: 5</h5>
-        <p>This is a very good lighthouse</p>
-      </div>
+  <div id="flex">      
+    <div>
+      <h4>Craginess/Windswept: 5</h4>
+      <p>Very craggy, very windy, very Pacific Northwest, weird rock right in front of it 
+         so there are crazy waves</p>
+    </div>
+    <div>
+      <h4>Sorrow: 5</h4>
+      <p>Lonely and weary, definite sorrow but in an understated way</p>
+    </div>
+    <div>
+      <h4>Height-to-Width Ratio: 4</h4>
+      <p>I wish it were just a wee bit taller, but it is the tallest lighthouse in Oregon 
+         so that might be too much</p>
+    </div>
+    <div>
+      <h4>Interesting History: 5</h4>
+      <p>Took forever to build because materials kept getting delayed, the building 
+         next door was struck by lightning in 1920, in 1998 a dog named Buddy fell down 
+         the slippery cliff but somehow managed to climb back up uninjured before he could be rescued</p>
+    </div>
+    <div>
+      <h4>Likelihood of Being Haunted: 5</h4>
+      <p>Legend says a worker fell through the scaffolding and died where his body could 
+         not be retrieved during building, another legend says that an assistant keeper 
+         died because he had to try to light the light while ill (the head keeper was out 
+         and the other keeper was drunk), reported ghosts but not after the end of WWII</p>
+    </div>
+    <div>
+      <h4>Name of First Lighthouse Keeper: 5</h4>
+      <p>Fayette S. Crosby</p>
+    </div>
+    <div>
+      <h4>Lens Size: 5</h4>
+      <p>1st order Fresnel lens (still active)</p>
+    </div>
+    <div>
+      <h4>Quirkiness: 3</h4>
+      <p>Pretty conventional but incredibly glamorous</p>
+    </div>
+    <div>
+      <h4>Design Choices: 5</h4>
+      <p>The black and white is really working for it, love the little entry house, very good</p>
+    </div>
+    <div>
+      <h4>Additional Subjective Points: 5</h4>
+      <p>This is a very good lighthouse</p>
     </div>
   </div>
 </body>

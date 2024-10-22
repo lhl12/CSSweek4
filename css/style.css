@@ -1,0 +1,171 @@
+/* ALL PAGES */
+/* general styling of links and images */
+a {
+  text-decoration: none;
+  font-family: serif;
+}
+
+img {
+  border-radius: 10%;
+  border-style: double;
+  border-width: 5px;
+  background-color: #b8dbd9;
+  padding: 10px;
+}
+
+/* skip to main content appears on screen during focus */
+.jump {
+  position: absolute;
+  left: -1000px;
+}
+
+.jump:focus {
+  position: absolute;
+  left: 0px;
+}
+
+/* header styling */
+header {
+  display: inline-block;
+  background-color: #b8dbd9;
+  height: 20%;
+  width: 100%;
+}
+
+h1 {
+  color: #151e3f;
+  padding: 0px 0px 20px 0px;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 250%;
+}
+
+/* nav styling */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav a {
+  font-size: 150%;
+  padding: 20px;
+  border-style: double;
+  color: #A3333D;
+  margin-top: 20px;
+}
+
+/* nav styling changes on hover */
+nav a:hover {
+  background-color: #e1aa7d;
+}
+
+/* HOME PAGE */
+/* content is organized in a two column grid with photo and text*/
+#homegrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  background-color: #e1aa7d;
+}
+
+#homegrid img {
+  width: 80%;
+}
+
+#homegrid div {
+  display: inline-block;
+  margin: 20px;
+}
+
+/* SCORING PAGE */
+/* overview is located in bar, which is a grid */
+#bar {
+  height: 25%;
+  z-index: 1;
+  padding: 20px 0px;
+  background-color: #477998;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  align-items: center;
+}
+
+#bar div{
+  padding-left: 10px;
+}
+
+#bar div img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+#bar div h2 {
+  font-size: 200%;
+}
+
+#bar div h3 {
+  font-size: 150%;
+}
+
+/* score details are located in a flex */
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+  background-color: #b8dbd9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#flex div {
+  display: inline-block;
+  border-style: solid;
+  width: 300px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #e1aa7d;
+}
+
+/* TOP FIVE */
+/* overview is in ordered list */
+ol {
+  padding: 10px;
+  background-color: #e1aa7d;
+}
+
+ol li {
+  margin-left: 20px;
+  font-size: 125%;
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/* every other child has a different background color */
+ol li:nth-child(odd) {
+  background-color: #b8dbd9;
+}
+
+/* details are in a grid with photos in the first column and text in the second */
+#photogrid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+#photogrid img {
+  width: 80%;
+  margin: 10px 20px;
+  transition-property: width;
+  transition-duration: .5s;
+  transition-timing: linear;
+  transition-delay: .5s;
+}
+
+/* photo transitions to larger size when hovered over */
+#photogrid img:hover {
+  width: 90%;
+}
